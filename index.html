@@ -9,12 +9,23 @@
     <nav>
 		  <hr class="separator separator--line">
 		  <ul>
-			  <li><a href="/">Home</a></li>
-			  <li><a href="/research/research">Research</a>
-			  </li>
-			  <li><a href="/teaching/teaching">Teaching</a></li>
-			  <li><a href="/cv/cv">CV</a></li>
-		  </ul>
+			<li><a href="/" {% if page.url == "/" %}class="f6 dim br-pill ph3 pv2 mb2 dib white bg-teal"
+					{% else %}class="f6 dim br-pill ph3 pv2 mb2 dib white bg-mid-gray" {% endif %}>Home</a></li>
+			<li><a href="/research/research"
+					{% if page.url == "/research/research.html" %}class="f6 link dim br-pill ph3 pv2 mb2 dib white bg-teal"
+					{% else %}class="f6 link dim br-pill ph3 pv2 mb2 dib white bg-mid-gray" {% endif %}>Research</a>
+			</li>
+			<li><a href="/teaching/teaching"
+					{% if page.url == "/teaching/teaching.html" %}class="f6 br3 ba ph3 pv2 mb2 dim teal"
+					{% else %}class="f6 br3 ba ph3 pv2 mb2 dim purple" {% endif %}>Teaching</a></li>
+			<li><a href="/activities/activities"
+					{% if page.url == "/activities/activities.html" %}class="f6 br3 ba ph3 pv2 mb2 dim teal"
+					{% else %}class="f6 br3 ba ph3 pv2 mb2 dim purple" {% endif %}>MyActivities</a></li>
+			<li><a href="/cv/cv" {% if page.url == "/cv/cv.html" %}class="f6 br3 ba ph3 pv2 mb2 dim teal"
+					{% else %}class="f6 br3 ba ph3 pv2 mb2 dim purple" {% endif %}>CV</a></li>
+			<li><a class="f6 br3 ba ph3 pv2 mb2 dim purple" href="https://ajaykdash.wordpress.com/"
+					target="_blank">Blog</a></li>
+		</ul>
 	  </nav>
   </body>
   
